@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMI TRADERS - Digital Catalog</title>
+    <style>
+        /* Color Theme: Pastel Pinks, Gold, and Blue */
+        :root {
+            --pink: #fce4ec;
+            --gold: #d4af37;
+            --blue: #e3f2fd;
+            --dark-blue: #1565c0;
+            --text: #333;
+        }
+
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: #f9f9f9; color: var(--text); }
+
+        /* --- 1. Welcome Blessing Overlay (3 Seconds) --- */
+        #welcome-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            display: flex; justify-content: center; align-items: center;
+            z-index: 1000; transition: opacity 1s ease-out;
+        }
+        .blessing-box { text-align: center; border: 3px solid var(--gold); padding: 40px; border-radius: 20px; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .blessing-box h1 { color: var(--gold); margin: 0; font-size: 2.5rem; }
+        .blessing-box p { font-size: 1.2rem; color: var(--dark-blue); }
+
+        /* --- 2. Header & Navigation --- */
+        header { background: var(--pink); padding: 20px; border-bottom: 3px solid var(--gold); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 28px; font-weight: bold; color: var(--dark-blue); text-transform: uppercase; }
+        
+        nav { display: flex; gap: 15px; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #444; font-weight: 500; font-size: 14px; padding: 5px 10px; border-radius: 5px; transition: 0.3s; }
+        nav a:hover { background: var(--gold); color: white; }
+
+        /* --- 3. Main Catalog Sections --- */
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .section-title { text-align: center; color: var(--gold); margin-bottom: 30px; border
